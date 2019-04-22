@@ -1,7 +1,7 @@
 # ES6 Notes
 
 ```javascript
-//Template Literal
+ //Template Literal
 console.log(`Hello! I'm a string
 continues on the next line`);
 
@@ -18,12 +18,17 @@ const instructor = {
         return `Hello ${this.name}, today we'll learn ${this.lesson}!`
     }
 }
-
-// ES5
+```
+# ES5
+```javascript
 console.log("Hello" + name + "I hope you have a great" + day);
-//ES6
+```
+# ES6
+```javascript
 console.log(`Hello ${name} I hope ${day} goes well!`);
-//interprolation
+```
+# interprolation
+```javascript
 console.log(`Hello ${instructor.name}, today we'll learn ${instructor.lesson}!`);
 
 console.log(instructor.greet());
@@ -54,8 +59,9 @@ function hello(name = 'Mystery Person') {
 }
 hello("Bobby");
 hello();
-
-//Arrow Functions
+```
+# Arrow Functions
+```javascript
  const teacher = {
      name: "Jimm",
      speak: function() {
@@ -80,7 +86,10 @@ const teacher = {
 };
 
 teacher.speak();
-//Lexical Binding - bind to the scope of where they are defined, not where they are used
+```
+# Lexical Binding 
+```javascript
+//bind to the scope of where they are defined, not where they are used
 
 let students = [
     {name: 'Hugo'},
@@ -132,9 +141,9 @@ function addStuff (x,y,...z) {
     return (x+y) * z.length
 }
 console.log(addStuff(1,2, "hello", "world", true, 99));
-
-//Spread
-
+```
+# Spread
+```javascript
 let random = ["Hello", "World", true, 99]
 let newArray = [1, 2,...random, 3];
 
@@ -156,8 +165,10 @@ let restEx = (...z) => {
 }
 restEx("hello", "world")
 //[ "hello", "world" ]
+```
 
-Array Destructors
+# Array Destructors
+```javascript
  var moreStudents = [`Julian`, `AJ`, `Matt`]
  var x = moreStudents[0]
  var y = moreStudents[1]
@@ -201,8 +212,10 @@ console.log(location,time);
 }
 
 something(travel);
+```
 
-//constructor function
+# Constructor function
+```javascript
 function Person (name, job) {
     this.name = name;
     this.job = job;
